@@ -24,35 +24,53 @@
         <div class="jumbotron">
             <h1>Viet Rater</h1>
             <br>
-            <h3>How good of a Viet are you?</h3>
-            <select class="form-control" name="occupation">
+            <h3>How good of a Vietnamese are you?</h3>
+            <select class="form-control" id="lastName">
                 <option value="" disabled selected>Select your Last Name</option>
-                <option>Nguyen</option>
-                <option>Other</option>
+                <option value="Nguyen">Nguyen</option>
+                <option value="Other">Other</option>
             </select>
             <br>
+
             <input type="radio" name="gender" value ="male" checked> Male
             <br>
             <input type="radio" name="gender" value ="female"> Female
             <br><br>
-            <select class="form-control" name="occupation">
+
+            <select class="form-control" id="occupation">
                 <option value="" disabled selected>Select your Occupation</option>
-                <option>Medical</option>
-                <option>Engineering</option>
-                <option>Law</option>
-                <option>Business</option>
-                <option>Sales</option>
-                <option>Education</option>
-                <option>Art</option>
-                <option>Government</option>
-                <option>Hobo</option>
+                <option value="Medical" >Medical</option>
+                <option value="Engineering" >Engineering</option>
+                <option value="Law" >Law</option>
+                <option value="Business" >Business</option>
+                <option value="Sales" >Sales</option>
+                <option value="Education" >Education</option>
+                <option value="Art" >Art</option>
+                <option value="Government" >Government</option>
+                <option value="Student" >Student</option>
+                <option value="Unemployed" >Unemployed</option>
             </select>
             <br>
 
             <input type="radio" name="loveStatus" value="Yes"> Having a significant other
             <br>
             <input type="radio" name="loveStatus" value="No" checked> Single and lonely af
+            <br><br>
+
+            <select class="form-control" id="instruments">
+                <option value="" disabled selected>Select an instrument that you can play</option>
+                <option value="Piano" >Piano</option>
+                <option value="Violin" >Violin</option>
+                <option value="Guitar" >Guitar</option>
+                <option value="Other" >Other</option>
+            </select>
+            <br>
+
+            <input type="radio" name="cooking" value="Yes"> Can cook a full course meal
+            <br>
+            <input type="radio" name="cooking" value="No" checked> Mì gói for life
             <br><br><br>
+            
             <button type="submit" class="btn-lg" onCLick="calculate()">Compute</button>
             <br><br>
             <div class="input-group">
